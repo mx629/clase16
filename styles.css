@@ -1,0 +1,53 @@
+body {
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+}
+header a {
+    color:white;
+}
+a.menu {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 15px;
+  justify-content: flex-start;
+}
+.menu-logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+#hero {
+  height: 100vh;
+  background-image: url(assets/img/hero.png);
+  background-size: cover;
+}
+.about {
+  justify-content: flex-end;
+}
+.hero-title {
+}
+.hero-title-sub {
+}
+.hero-title-button {
+}
+.button-hero {
+}
+.section {
+}
+.section h2 {
+  color:bisque
+}
+.section-services {
+}
+.section-day {
+}
+.ection-success {
+}
+.section-pricing {
+}
+.section-contact {
+}
+#gopro {
+}
