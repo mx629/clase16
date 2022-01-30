@@ -1,38 +1,102 @@
 body {
-  background-color: #333333;
-  margin: 0;
-  padding: 0;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0px;
 }
-header {
+.header-main {
   display: flex;
+  position: fixed;
+  height: 30px;
+  align-items: center;
+  padding: 10px;
+  width: 100vw;
+  background-color: rgba(10, 10, 10, .8);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 0px;
 }
-header a {
-    color:white;
+.menu {
+  display: flex;
+  flex-grow: 1;
 }
-a.menu {
-  font-family: 'Gill Sans', sans-serif;
-  font-size: 15px;
-  justify-content: flex-start;
+.menu-right{
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.menu a{
+  padding-right: 20px;
+  color:white;
+  text-decoration: none;
+}
+.menu-right a{
+  color:white;
+  text-decoration: none;
+  justify-self: flex-end;
 }
 .menu-logo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-}
+  padding-right: 20px;
+  width: 150px;
+  max-width: 100%;
+  }
 #hero {
   height: 100vh;
-  background-image: url(assets/img/hero.png);
-  background-size: cover;
+  background-image: url(assets/img/hero.jpg);
+  background-size: repeat;
 }
-.about {
-  justify-content: flex-end;
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-title {
+.hero-container {
+  padding: 40px 60px;
+  border: #e94340 solid 4px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  background-color: rgba(10, 10, 10, .7);
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.hero-logo {
+  margin-bottom: 20px;
+  width: 600px;
+  max-width: 100%;
+  background-size:cover;
 }
 .hero-title-sub {
+  padding: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em; /* no se por que tuve que poner estos*/
+  margin-bottom: 60px;
+  font-family: 'Parisienne', cursive;
+  font-size: 35px;
+  color:white;
+}
+.hero-title-intro {
+  margin-bottom: 10px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  color:white;
 }
 .hero-title-button {
 }
 .button-hero {
+  padding-top: 5px;
+  margin: 5px;
+  font-family: 'Dongle', sans-serif;
+  line-height: 0.7;
+  font-size: 25px;
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  border: #fdbb23 solid 2px;
+  color:white;
+  transition-duration: 0.4s;
+}
+.button-hero:hover {
+  background-color: rgba(253, 387, 35, 0.4);
 }
 .section {
 }
@@ -48,6 +112,37 @@ a.menu {
 .section-pricing {
 }
 .section-contact {
+  padding-bottom: 1000px;
 }
-#gopro {
+.promo {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+.promo div {
+  background-color: black;
+  width: fit-content;
+  height: 45px;
+  margin: auto;
+}
+.promo-img{
+  width: 45px;
+  height: 45px;
+}
+.promo-txt{
+  font-family: 'Dongle', sans-serif;
+  font-size: 24px;
+  color:white;
+  vertical-align: 15px;
+}
+.promo-txt-themefont{
+  font-family: 'Audiowide', sans-serif;
+  font-size: 16px;
+}
+.promo-txt-underline{
+  font-weight: 700;
 }

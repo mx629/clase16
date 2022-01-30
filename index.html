@@ -1,33 +1,43 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Tarea 16" />
-    <meta name="keywords" content="Tarea 16" />
-    <meta name="author" content="629" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript" src="scripts.js"></script>
-    <title>Pizza backgrounds</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tarea 16" />
+        <meta name="keywords" content="Tarea 16" />
+        <meta name="author" content="629" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="scripts.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dongle:wght@300;700&family=Parisienne&family=Yanone+Kaffeesatz:wght@300&display=swap');
+        </style>
+        <title>Pizza Backgrounds</title>
+    </head>
   <body>
-   <header>
-            <a id="menu-logo" href="#hero">Pizza backgrounds</a>
+   <header class="header-main">
+            <a href="#hero">
+                <img class="menu-logo" src="assets/img/logo.png" alt="Logo" />
+            </a>
             <nav class="menu" aria-label="Primary-nav">
                 <a href="#services">Our services</a>
                 <a href="#day">Pizza of the day</a>
                 <a href="#success">Stories of success</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
+                <div class="menu menu-right"> <a href="#login">Log in</a></div>
             </nav>
-            <a class="menu" id="about" href="#about">About</a>
     </header> 
     <section id="hero">
-        <h1 class="hero-title">Pizza backgrounds</h1>
-        <p class="hero-title-sub">For your pizza backgrounds needs</p>
-        <p class="hero-title-intro">Editor's picks:</p>
-        <div class="hero-title-button">
-            <button type="button" class="button-hero">Assertive Pizza Background</button>
-            <button type="button"class="button-hero">Flamboyant Pizza Background</button>
+        <div class="hero-container">
+            <img class="hero-logo" src="assets/img/logo.png" alt="Logo" />
+            <p class="hero-title-sub">For your professional pizza backgrounds needs</p>
+            <p class="hero-title-intro">Try our daily Editor's picks:</p>
+            <div class="hero-title-button">
+                <button type="button" class="button-hero">Assertive Pizza Background</button>
+                <button type="button" class="button-hero">Flamboyant Pizza Background</button>
+            </div>
+        </div>
+        <div id="hero-overlay">
+            Overlay
         </div>
     </section>
     <section class="section section-services" id="services">
@@ -45,7 +55,17 @@
     <section class="section section-contact" id="contact">
         <h2>Contact</h2>
     </section>
-  <footer id="gopro">
-    <p>Pizza Backgrounds for Professionals</p>
-  </footer>
+    <section class="section section-login" id="login">
+        <h2>Contact</h2>
+    </section>
+  <section class="promo">
+    <div>
+        <img class="promo-img" src="assets/img/cosmic.gif" alt="promo logo" />
+        <span class="promo-txt">Get Limited Edition </span>
+        <span class="promo-txt promo-txt-themefont">COSMIC </span>
+        <span class="promo-txt">Pizza Backgrounds with a </span>
+        <span class="promo-txt promo-txt-underline">SPECIAL DISCOUNT</span>
+        <img class="promo-img promo-img-right" src="assets/img/cosmic2.gif" alt="promo logo" />
+    </div>
+</section>
   </body>
