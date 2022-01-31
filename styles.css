@@ -3,12 +3,12 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.header-main {
+.header-container {
   display: flex;
   position: fixed;
   height: 30px;
-  align-items: center;
-  padding: 10px;
+  align-items: flex-start;
+  padding: 20px 10px 10px 10px;
   width: 100vw;
   background-color: rgba(10, 10, 10, .8);
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -16,35 +16,37 @@ body {
   flex-wrap: nowrap;
   margin-bottom: 0px;
 }
-.menu {
+.menu-nav {
   display: flex;
   flex-grow: 1;
 }
-.menu-right{
+.menu-nav-right{
   justify-content: flex-end;
   padding-right: 20px;
 }
-.menu a{
+.menu-nav a{
   padding-right: 20px;
   color:white;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
-.menu-right a{
+.menu-nav-right a{
   color:white;
   text-decoration: none;
   justify-self: flex-end;
+}
+.menu-nav a:hover {
+  color: #fdbb23;
 }
 .menu-logo {
   padding-right: 20px;
   width: 150px;
   max-width: 100%;
-  }
+}
 #hero {
   height: 100vh;
   background-image: url(assets/img/hero.jpg);
   background-size: repeat;
-}
-#hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +57,7 @@ body {
   height: fit-content;
   width: fit-content;
   text-align: center;
-  background-color: rgba(10, 10, 10, .7);
+  background-color: rgba(10, 10, 10, .8);
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
@@ -71,23 +73,21 @@ body {
   margin-block-end: 0em; /* no se por que tuve que poner estos*/
   margin-bottom: 60px;
   font-family: 'Parisienne', cursive;
-  font-size: 35px;
+  font-size: 28px;
   color:white;
 }
 .hero-title-intro {
   margin-bottom: 10px;
   font-family: 'Dongle', sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   color:white;
-}
-.hero-title-button {
 }
 .button-hero {
   padding-top: 5px;
   margin: 5px;
   font-family: 'Dongle', sans-serif;
   line-height: 0.7;
-  font-size: 25px;
+  font-size: 23px;
   height: 50px;
   width: 150px;
   background-color: transparent;

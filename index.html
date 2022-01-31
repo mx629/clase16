@@ -13,17 +13,19 @@
         <title>Pizza Backgrounds</title>
     </head>
   <body>
-   <header class="header-main">
+   <header class="header-container">
             <a href="#hero">
                 <img class="menu-logo" src="assets/img/logo.png" alt="Logo" />
             </a>
-            <nav class="menu" aria-label="Primary-nav">
+            <nav class="menu-nav" aria-label="Primary-nav">
                 <a href="#services">Our services</a>
                 <a href="#day">Pizza of the day</a>
                 <a href="#success">Stories of success</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
-                <div class="menu menu-right"> <a href="#login">Log in</a></div>
+                <div class="menu-nav menu-nav-right">
+                    <a href="#login">Log in</a>
+                </div>
             </nav>
     </header> 
     <section id="hero">
@@ -32,12 +34,9 @@
             <p class="hero-title-sub">For your professional pizza backgrounds needs</p>
             <p class="hero-title-intro">Try our daily Editor's picks:</p>
             <div class="hero-title-button">
-                <button type="button" class="button-hero">Assertive Pizza Background</button>
+                <button type="button" onclick="changeImage()" class="button-hero">Assertive Pizza Background</button>
                 <button type="button" class="button-hero">Flamboyant Pizza Background</button>
             </div>
-        </div>
-        <div id="hero-overlay">
-            Overlay
         </div>
     </section>
     <section class="section section-services" id="services">
@@ -61,10 +60,10 @@
   <section class="promo">
     <div>
         <img class="promo-img" src="assets/img/cosmic.gif" alt="promo logo" />
-        <span class="promo-txt">Get Limited Edition </span>
+        <span class="promo-txt">Get a Limited Edition </span>
         <span class="promo-txt promo-txt-themefont">COSMIC </span>
-        <span class="promo-txt">Pizza Backgrounds with a </span>
-        <span class="promo-txt promo-txt-underline">SPECIAL DISCOUNT</span>
+        <span class="promo-txt">Pizza Background with a special discount</span>
+        <span class="promo-txt promo-txt-underline">TODAY!</span>
         <img class="promo-img promo-img-right" src="assets/img/cosmic2.gif" alt="promo logo" />
     </div>
 </section>
